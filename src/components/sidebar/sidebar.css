@@ -44,14 +44,21 @@
 
 .sidebar .sidebar__navMenu ul li {
     list-style: none;
+    transition: all .4s ease-out;
+    cursor: pointer !important;
     text-transform: uppercase;
-    font-size: .94rem;
+    font-size: 18px;
     letter-spacing: 1px;
     color: #a4acc4;
-    transition: all .4s ease-out;
     font-weight: 500;
+    z-index: 99;
+    position: relative;
+}
+.sidebar .sidebar__navMenu ul li a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
     padding: 10px 0;
-    cursor: pointer;
 }
 
 .sidebar .sidebar__navMenu ul li:not(:last-child) {
@@ -59,11 +66,15 @@
 }
 
 .sidebar .sidebar__navMenu ul li:hover {
-    color: #fff;
     background: #7198de;
+    color: #ffffff;
 }
 
 .sidebar .sidebar__navMenu ul li.active {
+    color: #fff;
+    background: cornflowerblue;
+}
+.sidebar .sidebar__navMenu ul li.active a {
     color: #fff;
     background: cornflowerblue;
 }

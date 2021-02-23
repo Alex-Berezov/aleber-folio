@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from "react-router-dom";
 
 import './sidebar.css'
 import iAm from '../../assets/img/iam.png'
@@ -11,11 +12,21 @@ function Sidebar() {
             </div>
             <div className="sidebar__navMenu">
                 <ul>
-                    <li className="active">Главная</li>
-                    <li>Обо мне</li>
-                    <li>Резюме</li>
-                    <li>Портфолио</li>
-                    <li>Контакты</li>
+                    <li className="active">
+                        <NavLink to="/">Главная</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/about">Обо мне</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/resume">Резюме</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/portfolio">Портфолио</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/contacts">Контакты</NavLink>
+                    </li>
                 </ul>
             </div>
             <div className="sidebar__copyright">
