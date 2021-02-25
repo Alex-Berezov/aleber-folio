@@ -7,22 +7,10 @@
     background: #10121b;
 }
 
-.about h2 {
-    color: #cdcdcd;
-    font-weight: 600;
-    font-size: 30px;
-}
-
-.about span {
-    width: 5%;
-    height: 2px;
-    background: #7198de;
-}
-
 .about .about__text {
-    width: 70%;
+    width: 55%;
     color: #cdcdcd;
-    margin-top: 50px;
+    margin: 50px auto;
     font-weight: 500;
     font-size: 17px;
 }

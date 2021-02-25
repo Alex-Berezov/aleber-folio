@@ -8,8 +8,10 @@ function About() {
         <div className="about">
             <Lines />
 
-            <h2>Обо мне</h2>
-            <span/>
+            <div className="block__title">
+                <h2>Обо мне</h2>
+                <span/>
+            </div>
             <div className="about__text">
                 <p>
                     Начал карьеру в продажах, в компании Евросеть. Затем перешёл в банковскую сферу. Работал в таких банках

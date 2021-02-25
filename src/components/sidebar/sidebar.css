@@ -11,6 +11,8 @@
     color: #a4acc4;
     overflow: hidden;
     overflow-y: auto;
+    position: fixed;
+    z-index: 99999999;
 }
 
 .sidebar .sidebar__photo {
