@@ -2,11 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    height: 100vh;
     justify-content: center;
     background: #10121b;
     width: 100%;
-    padding-top: 50px;
+    padding: 50px 0;
 }
 
 .contacts__contactsForm {
@@ -20,6 +20,102 @@
     width: 50%;
 }
 
+.getInTouch .title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.getInTouch form .form_field {
+    margin-top: 30px;
+    position: relative;
+}
+
+.getInTouch form .form_field label {
+    position: absolute;
+    left: 15px;
+    top: -13px;
+    background: #10121b;
+    transition: all .4s ease-out;
+    pointer-events: none;
+    padding: 0 10px;
+    font-size: .94rem;
+    display: inline-block;
+    margin-bottom: .5rem;
+    color: #a4acc4;
+}
+
+.getInTouch form .form_field input {
+    border: 1px solid #2e344e;
+    font-size: 1rem;
+    height: 50px;
+    padding: 0 15px;
+    color: #a4acc4;
+    background: transparent;
+    width: 90%;
+}
+
+.getInTouch form .form_field textarea {
+    border: 1px solid #2e344e;
+    font-size: 1rem;
+    padding: 0 15px;
+    color: #a4acc4;
+    background: transparent;
+    width: 90%;
+    height: 200px;
+}
+
+.getInTouch form .button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    background: #037fff;
+    border: 0;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    outline: none;
+}
+.getInTouch form .button:hover {
+    background: #4ba7ff;
+}
+
+
 .connection {
     width: 50%;
+}
+
+.connection .connection_infoblock {
+    margin-top: 55px;
+    background: #191d2b;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.connection .connection_infoblock .infoblock_title {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.connection .connection_infoblock .infoblock_item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.connection .connection_infoblock .infoblock_item span {
+    color: #a4acc4;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.connection .connection_infoblock .infoblock_item span img {
+    width: 20px;
+    height: auto;
+    margin-right: 15px;
 }
