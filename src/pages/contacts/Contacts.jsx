@@ -38,16 +38,11 @@ function Contacts() {
                 </div>
                 <div className="connection">
                     <div className="connection_infoblock">
-                        <div className="infoblock_title">Мессенджеры</div>
+                        <div className="infoblock_title">Свяжитесь со мной</div>
                         <div className="infoblock_item">
                             <span><img src={whatsapp} alt="whatsappIcon"/> +374 41-93-93-41</span>
                             <span><img src={telegram} alt="telegram"/>@Aleber613</span>
                             <span><img src={skype} alt="skype"/>alex.berezov</span>
-                        </div>
-                    </div>
-                    <div className="connection_infoblock">
-                        <div className="infoblock_title">Email</div>
-                        <div className="infoblock_item">
                             <span><img src={gmail} alt="gmail"/>aleber197@gmail.com</span>
                         </div>
                     </div>

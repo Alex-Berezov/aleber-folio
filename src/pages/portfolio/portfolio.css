@@ -96,3 +96,50 @@
 .portfolio__examples .wrapper .tabs_content .visible {
     display: flex;
 }
+
+/*====== Project description popup ======*/
+
+.portfolio .projectDescPopup {
+    position: absolute;
+    top: 4%;
+    left: 17%;
+    background: antiquewhite;
+    color: black;
+    width: 81%;
+    height: 92%;
+}
+
+.portfolio .projectDescPopup .header {
+    display: flex;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.portfolio .projectDescPopup .header h3 {
+
+}
+
+.portfolio .projectDescPopup .header span {
+    margin-left: auto;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.portfolio .projectDescPopup .body {
+    padding: 10px 50px;
+}
+
+.portfolio .projectDescPopup .body .body__items {
+    margin-bottom: 40px;
+}
+
+/*====== End Project description popup ======*/
+
+
+@media screen and (max-width: 1536px) {
+    .portfolio__examples .wrapper {
+        width: 60%;
+        margin-left: 28%;
+    }
+}

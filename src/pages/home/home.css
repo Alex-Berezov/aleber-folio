@@ -23,3 +23,21 @@
     font-size: 24px;
     font-weight: 500;
 }
+
+@media screen and (max-width: 1536px) {
+    .homePage .homePage__title {
+        margin-left: 11%;
+    }
+    .homePage .homePage__text {
+        margin-left: 12%;
+    }
+}
+
+@media screen and (max-width: 1152px) {
+    .homePage .homePage__text {
+        margin-left: 13%;
+        width: 65%;
+        text-align: center;
+        line-height: 45px;
+    }
+}

@@ -87,3 +87,10 @@
     height: 5%;
     text-align: center;
 }
+
+
+@media screen and (max-width: 1536px) {
+    .sidebar {
+        width: 20%;
+    }
+}

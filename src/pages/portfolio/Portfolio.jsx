@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import './portfolio.css'
 import img1 from '../../assets/img/examples/img-1.jpg'
@@ -23,6 +23,16 @@ import img19 from '../../assets/img/examples/img-19.jpg'
 import img20 from '../../assets/img/examples/img-20.jpg'
 
 function Portfolio() {
+    const [visiblePopup, setVisiblePopup] = useState(false)
+
+
+    const openVisiblePopup = () => {
+        setVisiblePopup(!visiblePopup)
+    }
+    const closeVisiblePopup = () => {
+        setVisiblePopup(!visiblePopup)
+    }
+
     return (
         <div className="portfolio">
             <div className="portfolio__title block__title">
@@ -45,7 +55,7 @@ function Portfolio() {
                                 <img src={img1} alt="img-1" />
                                 <div className="portfolio__item_overlay">
                                     <span className="text">Работа такая-то растакая-то</span>
-                                    <span className="open_work">Смотреть проект</span>
+                                    <span onClick={openVisiblePopup} className="open_work">Смотреть проект</span>
                                 </div>
                             </div>
                             <div className="portfolio__item">
@@ -189,6 +199,33 @@ function Portfolio() {
                     </div>
                 </div>
             </div>
+
+            {visiblePopup && (
+                <div className="projectDescPopup">
+                    <div className="header">
+                        <h3>Информация о проекте Портфолио</h3>
+                        <span onClick={closeVisiblePopup}>X</span>
+                    </div>
+                    <div className="body">
+                        <div className="body__items stack">
+                            <h4>Стэк:</h4>
+                            <p>React, Node, Express, MongoDB</p>
+                        </div>
+                        <div className="body__items libraries">
+                            <h4>Библиотеки:</h4>
+                            <p>Redux, React-router-dom, Saga</p>
+                        </div>
+                        <div className="body__items prodLink">
+                            <h4>Ссылка на продакшен:</h4>
+                            <a href="https://github.com/Alex-Berezov">https://github.com/Alex-Berezov</a>
+                        </div>
+                        <div className="body__items githubLink">
+                            <h4>Ссылка на гитхаб:</h4>
+                            <a href="https://github.com/Alex-Berezov/aleber-folio">https://github.com/Alex-Berezov/aleber-folio</a>
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
 );
 }

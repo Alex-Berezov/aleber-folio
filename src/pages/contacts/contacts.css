@@ -119,3 +119,10 @@
     height: auto;
     margin-right: 15px;
 }
+
+@media screen and (max-width: 1536px) {
+    .contacts__contactsForm {
+        width: 60%;
+        margin-left: 28%;
+    }
+}

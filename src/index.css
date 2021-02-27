@@ -1,5 +1,5 @@
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .App {
@@ -40,4 +40,10 @@ body {
     width: 100px;
     height: 2px;
     background: #7198de;
+}
+
+@media screen and (max-width: 1536px) {
+    .block__title {
+        margin-left: 11%;
+    }
 }

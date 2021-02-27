@@ -145,3 +145,45 @@
     font-size: 16px;
     margin-top: 0;
 }
+
+@media screen and (max-width: 1536px) {
+    .resume .resume__skills_title {
+        margin-left: 13%;
+    }
+    .resume .resume__skills {
+        width: 60%;
+    }
+    .resume__skills_progressBars {
+        margin-left: 13%;
+    }
+    .resume__info_title {
+        margin-left: 13%;
+    }
+    .resume .resume__info {
+        width: 60%;
+    }
+    .resume__info_experience {
+        margin-left: 13%;
+    }
+}
+
+@media screen and (max-width: 1152px) {
+    .resume .resume__skills {
+        width: 70%;
+    }
+    .resume .resume__skills_title {
+        margin-left: 18%;
+    }
+    .resume__skills_progressBars {
+        margin-left: 18%;
+    }
+    .resume .resume__info {
+        width: 70%;
+    }
+    .resume__info_title {
+        margin-left: 18%;
+    }
+    .resume__info_experience {
+        margin-left: 18%;
+    }
+}

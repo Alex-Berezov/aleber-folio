@@ -55,3 +55,9 @@
         top: 110%;
     }
 }
+
+@media screen and (max-width: 1536px) {
+    .lines {
+        left: 10%;
+    }
+}
