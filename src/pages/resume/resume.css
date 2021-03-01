@@ -167,23 +167,57 @@
     }
 }
 
-@media screen and (max-width: 1152px) {
+@media screen and (max-width: 1280px) {
     .resume .resume__skills {
-        width: 70%;
+        width: 90%;
     }
     .resume .resume__skills_title {
-        margin-left: 18%;
+        margin-left: 0;
     }
     .resume__skills_progressBars {
-        margin-left: 18%;
+        margin-left: 0;
     }
     .resume .resume__info {
-        width: 70%;
+        width: 90%;
     }
     .resume__info_title {
-        margin-left: 18%;
+        margin-left: 0;
     }
     .resume__info_experience {
-        margin-left: 18%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 962px) {
+    .resume .resume__skills {
+        width: 86%;
+    }
+    .resume .resume__info {
+        width: 86%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .progressBar {
+        width: 100%;
+    }
+    .resume .resume__info {
+        margin-top: 0;
+    }
+    .resume__info_experience .experience__block {
+        flex-wrap: wrap;
+    }
+    .resume__info_experience .experience__block .experience__block_summary {
+        width: 100%;
+        padding-left: 20px;
+        padding-top: 7px;
+    }
+    .resume__info_experience .experience__block .experience__block_details {
+        padding-left: 20px;
+        margin-top: 15px;
+        width: 100%;
+    }
+    .resume__info_experience .experience__block .experience__block_details:before {
+        display: none;
     }
 }

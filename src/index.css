@@ -47,3 +47,16 @@ body {
         margin-left: 11%;
     }
 }
+
+@media screen and (max-width: 1280px) {
+    .block__title {
+        margin-left: 0;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 962px) {
+    .block__title {
+        width: 86%;
+    }
+}

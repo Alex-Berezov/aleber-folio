@@ -116,10 +116,11 @@
         color: #fff;
         font-weight: 600;
         font-size: 24px;
+        cursor: pointer;
     }
     .sidebar__burger {
         display: block;
-        position: fixed;
+        position: absolute;
         left: 10px;
         top: 10px;
         z-index: 9999;
@@ -131,6 +132,40 @@
         background: #fff;
         display: block;
         margin-bottom: 7px;
+    }
+    .visible_sidebar {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .sidebar {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .sidebar {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .sidebar {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sidebar {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .sidebar {
+        width: 100%;
+        left: -425px;
     }
     .visible_sidebar {
         left: 0;

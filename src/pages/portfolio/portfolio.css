@@ -103,7 +103,7 @@
     position: absolute;
     top: 4%;
     left: 17%;
-    background: antiquewhite;
+    background: cornflowerblue;
     color: black;
     width: 81%;
     height: 92%;
@@ -116,7 +116,9 @@
 }
 
 .portfolio .projectDescPopup .header h3 {
-
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
 }
 
 .portfolio .projectDescPopup .header span {
@@ -124,10 +126,12 @@
     cursor: pointer;
     font-weight: 600;
     font-size: 24px;
+    color: #fff;
 }
 
 .portfolio .projectDescPopup .body {
     padding: 10px 50px;
+    color: #fff;
 }
 
 .portfolio .projectDescPopup .body .body__items {
@@ -141,5 +145,61 @@
     .portfolio__examples .wrapper {
         width: 60%;
         margin-left: 28%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .portfolio__examples .wrapper {
+        width: 90%;
+        margin: 50px auto;
+    }
+}
+
+@media screen and (max-width: 962px) {
+    .portfolio__examples .wrapper {
+        width: 86%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio__examples .wrapper .tabs_content .content .portfolio__item {
+        width: calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .portfolio__examples .wrapper .tabs_content .content .portfolio__item {
+        width: calc(100% - 10px);
+    }
+    .portfolio .projectDescPopup {
+        height: auto;
+    }
+    .portfolio .projectDescPopup .header {
+        padding: 15px;
+    }
+    .portfolio .projectDescPopup .body {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .portfolio__examples .wrapper .tabs_btns ul li {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .portfolio__examples .wrapper {
+        margin: 30px auto;
+    }
+    .portfolio__examples .wrapper .tabs_btns ul {
+        flex-direction: column;
+    }
+    .portfolio__examples .wrapper .tabs_btns ul li {
+        width: fit-content;
+        margin-bottom: 15px;
+    }
+    .portfolio__examples .wrapper .tabs_content {
+        margin-top: 15px;
     }
 }

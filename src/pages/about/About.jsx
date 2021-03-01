@@ -1,13 +1,10 @@
 import React from 'react';
 
 import './about.css'
-import Lines from "../../components/lines/Lines";
 
 function About() {
     return (
         <div className="about">
-            <Lines />
-
             <div className="block__title">
                 <h2>Обо мне</h2>
                 <span/>

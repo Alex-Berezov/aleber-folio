@@ -41,3 +41,18 @@
         line-height: 45px;
     }
 }
+
+@media screen and (max-width: 1280px) {
+    .homePage .homePage__title {
+        margin-left: 0;
+    }
+    .homePage .homePage__text {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .homePage .homePage__title {
+        text-align: center;
+    }
+}

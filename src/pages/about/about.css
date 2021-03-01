@@ -23,3 +23,29 @@
         width: 60%;
     }
 }
+
+@media screen and (max-width: 1280px) {
+    .about .about__text {
+        margin: 0;
+        margin-top: 50px;
+        margin-left: 0;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 962px) {
+    .about {
+        height: 100vh;
+        padding-top: 50px;
+    }
+    .about .about__text {
+        width: 86%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about {
+        height: auto;
+        padding-top: 50px;
+    }
+}

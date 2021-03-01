@@ -3,7 +3,7 @@
     top: 0;
     height: 100%;
     margin: auto;
-    width: 90vw;
+    width: 99vw;
 }
 
 .line {
@@ -56,8 +56,8 @@
     }
 }
 
-@media screen and (max-width: 1536px) {
+@media screen and (max-width: 1280px) {
     .lines {
-        left: 10%;
+        left: 0;
     }
 }

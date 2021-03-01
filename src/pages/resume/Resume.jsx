@@ -1,13 +1,10 @@
 import React from 'react';
 
-import Lines from "../../components/lines/Lines";
 import './resume.css'
 
 function Resume() {
     return (
         <div className="resume">
-            <Lines/>
-
             <div className="resume__skills">
                 <div className="resume__skills_title block__title">
                     <h2>Мои скилы</h2>

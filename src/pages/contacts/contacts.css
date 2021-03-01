@@ -125,4 +125,46 @@
         width: 60%;
         margin-left: 28%;
     }
+    .portfolio .projectDescPopup {
+        left: 22%;
+        width: 76%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .contacts__contactsForm {
+        width: 90%;
+        margin: 50px auto;
+    }
+    .portfolio .projectDescPopup {
+        left: 6%;
+        width: 90%;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 962px) {
+    .contacts__contactsForm {
+        width: 86%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contacts {
+        height: auto;
+    }
+    .contacts__contactsForm {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+    .getInTouch {
+        width: 100%;
+        order: 1;
+        margin-top: 50px;
+    }
+    .connection {
+        width: 100%;
+        order: 0;
+    }
 }
