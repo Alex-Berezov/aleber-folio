@@ -25,20 +25,20 @@ function Sidebar() {
                 </div>
                 <div className="sidebar__navMenu">
                     <ul>
-                        <li className="active">
-                            <NavLink to="/">Главная</NavLink>
+                        <li>
+                            <NavLink exact to="/" activeClassName="active" >Главная</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/about">Обо мне</NavLink>
+                            <NavLink to="/about" activeClassName="active" >Обо мне</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/resume">Резюме</NavLink>
+                            <NavLink to="/resume" activeClassName="active" >Резюме</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/portfolio">Портфолио</NavLink>
+                            <NavLink to="/portfolio" activeClassName="active" >Портфолио</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/contacts">Контакты</NavLink>
+                            <NavLink to="/contacts" activeClassName="active" >Контакты</NavLink>
                         </li>
                     </ul>
                 </div>

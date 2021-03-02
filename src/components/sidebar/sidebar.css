@@ -72,14 +72,14 @@
     color: #ffffff;
 }
 
-.sidebar .sidebar__navMenu ul li.active {
+.sidebar .sidebar__navMenu ul li a.active {
     color: #fff;
     background: cornflowerblue;
 }
-.sidebar .sidebar__navMenu ul li.active a {
-    color: #fff;
-    background: cornflowerblue;
-}
+/*.sidebar .sidebar__navMenu ul li a.active {*/
+/*    color: #fff;*/
+/*    background: cornflowerblue;*/
+/*}*/
 
 .sidebar .sidebar__copyright {
     border-top: 1px solid #2e344e;
