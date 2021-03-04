@@ -1,7 +1,8 @@
 import {combineReducers} from 'redux'
+import portfolioReducer from './portfolio'
 
 let rootReducer = combineReducers({
-    // navbar
+    portfolioReducer
 })
 
 export default rootReducer

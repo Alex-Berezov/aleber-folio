@@ -1,0 +1,39 @@
+.portfolio .projectDescPopup {
+    position: fixed;
+    top: 4%;
+    left: 17%;
+    background: cornflowerblue;
+    color: black;
+    width: 81%;
+    height: 92%;
+    z-index: 9999999;
+}
+
+.portfolio .projectDescPopup .header {
+    display: flex;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.portfolio .projectDescPopup .header h3 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+}
+
+.portfolio .projectDescPopup .header span {
+    margin-left: auto;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+}
+
+.portfolio .projectDescPopup .body {
+    padding: 10px 50px;
+    color: #fff;
+}
+
+.portfolio .projectDescPopup .body .body__items {
+    margin-bottom: 40px;
+}
