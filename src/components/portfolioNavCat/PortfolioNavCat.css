@@ -1,0 +1,24 @@
+.portfolio__examples .wrapper .tabs_btns ul {
+    display: flex;
+    padding-left: 0;
+}
+
+.portfolio__examples .wrapper .tabs_btns ul li {
+    list-style: none;
+    margin-right: 40px;
+    cursor: pointer;
+    color: #cdcdcd;
+    font-weight: 500;
+    font-size: 18px;
+    z-index: 999;
+}
+
+.portfolio__examples .wrapper .tabs_btns ul li:hover {
+    border-bottom: 1px solid #7198de;
+    color: #ffffff;
+}
+
+.portfolio__examples .wrapper .tabs_btns ul li.selected {
+    border-bottom: 1px solid #7198de;
+    color: #ffffff;
+}

@@ -1,20 +1,18 @@
-import React, {useState} from 'react';
+import React, {useState, useCallback} from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import PortfolioPopup from '../../components/portfolioPopup/PortfolioPopup'
-
-// import {setPortfolioCategory} from '../../redux/actions/portfolio'
-
+import PortfolioNavCat from '../../components/portfolioNavCat/PortfolioNavCat'
+import {setPortfolioCategory, setPortfolioItems} from '../../redux/actions/portfolio'
+import PortfilioWorkItems from '../../components/portfilioWorkItems/PortfilioWorkItems'
 import './portfolio.css'
 
 function Portfolio(props) {
-    // const dispatch = useDispatch();
+    const dispatch = useDispatch();
     const [visiblePopup, setVisiblePopup] = useState(null)
-    const [isActive, setIsActive] = useState(0)
-    const {portfilioNavItems, portfilioWorkItems} = useSelector(state => state.portfolioReducer)
+    const {portfilioNavItems, portfilioWorkItems, category} = useSelector(state => state.portfolioReducer)
 
-    const handleSelectedPortfolioItem = () => {
-
-    }
+    const onSelectCategory = useCallback(index => {
+        dispatch(setPortfolioCategory(index))
+    }, [])
 
     const openVisiblePopup = (e) => {
         setVisiblePopup(e.target.dataset.index)
@@ -31,41 +29,18 @@ function Portfolio(props) {
             </div>
             <div className="portfolio__examples">
                 <div className="wrapper">
-                    <div className="tabs_btns">
-                        <ul>
-                            {portfilioNavItems &&
-                            portfilioNavItems.map((name, index) => {
-                                return <li
-                                    className={`tab_${index} ${index === isActive ? 'selected' : ''}`}
-                                    key={`${name}_${index}`}
-                                >
-                                    {name}
-                                </li>
-                            })
-                            }
-                        </ul>
-                    </div>
-                    <div className="tabs_content">
-                        {portfilioWorkItems &&
-                        portfilioWorkItems.map((work, index) => {
-                            return <div className="portfolio__item" key={work.id + '_' + index}>
-                                <img
-                                    onClick={openVisiblePopup}
-                                    data-index={index}
-                                    src={work.img}
-                                    alt="img-1"
-                                />
-
-                                {portfilioWorkItems[visiblePopup] &&
-                                <PortfolioPopup
-                                    {...portfilioWorkItems[visiblePopup]}
-                                    closeVisiblePopup={closeVisiblePopup}
-                                />
-                                }
-                            </div>
-                        })
-                        }
-                    </div>
+                    <PortfolioNavCat
+                        activeCategory={category}
+                        onClickCategory={onSelectCategory}
+                        items={portfilioNavItems}
+                    />
+                    <PortfilioWorkItems
+                        portfilioWorkItems={portfilioWorkItems}
+                        category={category}
+                        openVisiblePopup={openVisiblePopup}
+                        closeVisiblePopup={closeVisiblePopup}
+                        visiblePopup={visiblePopup}
+                    />
                 </div>
             </div>
         </div>

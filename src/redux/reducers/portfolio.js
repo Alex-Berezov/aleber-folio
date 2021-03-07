@@ -1,4 +1,4 @@
-import { SET_PORTFOLIO_CATEGORY } from '../actions/portfolio'
+import { SET_PORTFOLIO_CATEGORY, SET_PORTFOLIO_ITEMS } from '../actions/portfolio'
 
 import img1 from '../../assets/img/examples/img-1.jpg'
 import img2 from '../../assets/img/examples/img-2.jpg'
@@ -22,11 +22,12 @@ import img19 from '../../assets/img/examples/img-19.jpg'
 import img20 from '../../assets/img/examples/img-20.jpg'
 
 let initialState = {
-    portfilioNavItems: [ 'Все работы', 'React', 'JavaScript', 'WordPress' ],
+    category: null,
+    portfilioNavItems: [ 'React', 'JavaScript', 'WordPress' ],
     portfilioWorkItems: [
         {id: 0,
             img: img1,
-            category: 'React',
+            category: 0,
             workName: 'My portfolio',
             stack: 'React, Node, Express, MongoDB',
             libraries: 'Redux, React-router-dom, Saga',
@@ -35,7 +36,7 @@ let initialState = {
         },
         {id: 1,
             img: img2,
-            category: 'React',
+            category: 0,
             workName: 'Work 2',
             stack: 'React, Node, Express, MongoDB',
             libraries: 'Redux, React-router-dom, Saga',
@@ -44,7 +45,7 @@ let initialState = {
         },
         {id: 2,
             img: img3,
-            category: 'React',
+            category: 0,
             workName: 'Work 3',
             stack: 'React, Node, Express, MongoDB',
             libraries: 'Redux, React-router-dom, Saga',
@@ -53,7 +54,7 @@ let initialState = {
         },
         {id: 3,
             img: img4,
-            category: 'React',
+            category: 0,
             workName: 'Work 3',
             stack: 'React, Node, Express, MongoDB',
             libraries: 'Redux, React-router-dom, Saga',
@@ -62,7 +63,7 @@ let initialState = {
         },
         {id: 4,
             img: img5,
-            category: 'React',
+            category: 0,
             workName: 'Work 4',
             stack: 'React, Node, Express, MongoDB',
             libraries: 'Redux, React-router-dom, Saga',
@@ -71,7 +72,8 @@ let initialState = {
         },
         {id: 5,
             img: img6,
-            category: 'React', workName: 'Work 5',
+            category: 0,
+            workName: 'Work 5',
             stack: 'React, Node, Express, MongoDB',
             libraries: 'Redux, React-router-dom, Saga',
             prodLink: 'https://github.com/Alex-Berezov',
@@ -79,7 +81,8 @@ let initialState = {
         },
         {id: 6,
             img: img7,
-            category: 'React', workName: 'Work 7',
+            category: 1,
+            workName: 'Work 7',
             stack: 'React, Node, Express, MongoDB',
             libraries: 'Redux, React-router-dom, Saga',
             prodLink: 'https://github.com/Alex-Berezov',
@@ -87,7 +90,8 @@ let initialState = {
         },
         {id: 7,
             img: img8,
-            category: 'React', workName: 'Work 8',
+            category: 1,
+            workName: 'Work 8',
             stack: 'React, Node, Express, MongoDB',
             libraries: 'Redux, React-router-dom, Saga',
             prodLink: 'https://github.com/Alex-Berezov',
@@ -95,7 +99,8 @@ let initialState = {
         },
         {id: 8,
             img: img9,
-            category: 'React', workName: 'Work 9',
+            category: 1,
+            workName: 'Work 9',
             stack: 'React, Node, Express, MongoDB',
             libraries: 'Redux, React-router-dom, Saga',
             prodLink: 'https://github.com/Alex-Berezov',
@@ -103,7 +108,8 @@ let initialState = {
         },
         {id: 9,
             img: img10,
-            category: 'React', workName: 'Work 10',
+            category: 1,
+            workName: 'Work 10',
             stack: 'React, Node, Express, MongoDB',
             libraries: 'Redux, React-router-dom, Saga',
             prodLink: 'https://github.com/Alex-Berezov',
@@ -111,7 +117,8 @@ let initialState = {
         },
         {id: 10,
             img: img11,
-            category: 'React', workName: 'Work 11',
+            category: 1,
+            workName: 'Work 11',
             stack: 'React, Node, Express, MongoDB',
             libraries: 'Redux, React-router-dom, Saga',
             prodLink: 'https://github.com/Alex-Berezov',
@@ -119,7 +126,8 @@ let initialState = {
         },
         {id: 11,
             img: img12,
-            category: 'React', workName: 'Work 12',
+            category: 1,
+            workName: 'Work 12',
             stack: 'React, Node, Express, MongoDB',
             libraries: 'Redux, React-router-dom, Saga',
             prodLink: 'https://github.com/Alex-Berezov',
@@ -127,7 +135,8 @@ let initialState = {
         },
         {id: 12,
             img: img13,
-            category: 'React', workName: 'Work 13',
+            category: 1,
+            workName: 'Work 13',
             stack: 'React, Node, Express, MongoDB',
             libraries: 'Redux, React-router-dom, Saga',
             prodLink: 'https://github.com/Alex-Berezov',
@@ -135,7 +144,8 @@ let initialState = {
         },
         {id: 13,
             img: img14,
-            category: 'React', workName: 'Work 14',
+            category: 1,
+            workName: 'Work 14',
             stack: 'React, Node, Express, MongoDB',
             libraries: 'Redux, React-router-dom, Saga',
             prodLink: 'https://github.com/Alex-Berezov',
@@ -143,7 +153,8 @@ let initialState = {
         },
         {id: 14,
             img: img15,
-            category: 'React', workName: 'Work 15',
+            category: 2,
+            workName: 'Work 15',
             stack: 'React, Node, Express, MongoDB',
             libraries: 'Redux, React-router-dom, Saga',
             prodLink: 'https://github.com/Alex-Berezov',
@@ -151,7 +162,8 @@ let initialState = {
         },
         {id: 15,
             img: img16,
-            category: 'React', workName: 'Work 16',
+            category: 2,
+            workName: 'Work 16',
             stack: 'React, Node, Express, MongoDB',
             libraries: 'Redux, React-router-dom, Saga',
             prodLink: 'https://github.com/Alex-Berezov',
@@ -159,7 +171,8 @@ let initialState = {
         },
         {id: 16,
             img: img17,
-            category: 'React', workName: 'Work 17',
+            category: 2,
+            workName: 'Work 17',
             stack: 'React, Node, Express, MongoDB',
             libraries: 'Redux, React-router-dom, Saga',
             prodLink: 'https://github.com/Alex-Berezov',
@@ -167,7 +180,8 @@ let initialState = {
         },
         {id: 17,
             img: img18,
-            category: 'React', workName: 'Work 18',
+            category: 2,
+            workName: 'Work 18',
             stack: 'React, Node, Express, MongoDB',
             libraries: 'Redux, React-router-dom, Saga',
             prodLink: 'https://github.com/Alex-Berezov',
@@ -175,7 +189,8 @@ let initialState = {
         },
         {id: 18,
             img: img19,
-            category: 'React', workName: 'Work 19',
+            category: 2,
+            workName: 'Work 19',
             stack: 'React, Node, Express, MongoDB',
             libraries: 'Redux, React-router-dom, Saga',
             prodLink: 'https://github.com/Alex-Berezov',
@@ -183,7 +198,8 @@ let initialState = {
         },
         {id: 19,
             img: img20,
-            category: 'React', workName: 'Work 20',
+            category: 2,
+            workName: 'Work 20',
             stack: 'React, Node, Express, MongoDB',
             libraries: 'Redux, React-router-dom, Saga',
             prodLink: 'https://github.com/Alex-Berezov',
@@ -195,7 +211,16 @@ let initialState = {
 const portfolioReducer = (state = initialState, action) => {
     switch (action.type) {
         case SET_PORTFOLIO_CATEGORY: {
-            return state
+            return {
+                ...state,
+                category: action.payload
+            }
+        }
+        case SET_PORTFOLIO_ITEMS: {
+            return {
+                ...state,
+                category: action.payload
+            }
         }
         default:
             return state
