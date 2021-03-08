@@ -18,6 +18,7 @@
 
 .getInTouch {
     width: 50%;
+    z-index: 999999;
 }
 
 .getInTouch .title {
@@ -25,61 +26,6 @@
     font-weight: 500;
     font-size: 22px;
 }
-
-.getInTouch form .form_field {
-    margin-top: 30px;
-    position: relative;
-}
-
-.getInTouch form .form_field label {
-    position: absolute;
-    left: 15px;
-    top: -13px;
-    background: #10121b;
-    transition: all .4s ease-out;
-    pointer-events: none;
-    padding: 0 10px;
-    font-size: .94rem;
-    display: inline-block;
-    margin-bottom: .5rem;
-    color: #a4acc4;
-}
-
-.getInTouch form .form_field input {
-    border: 1px solid #2e344e;
-    font-size: 1rem;
-    height: 50px;
-    padding: 0 15px;
-    color: #a4acc4;
-    background: transparent;
-    width: 90%;
-}
-
-.getInTouch form .form_field textarea {
-    border: 1px solid #2e344e;
-    font-size: 1rem;
-    padding: 0 15px;
-    color: #a4acc4;
-    background: transparent;
-    width: 90%;
-    height: 200px;
-}
-
-.getInTouch form .button {
-    margin-top: 30px;
-    padding: 15px 30px;
-    background: #037fff;
-    border: 0;
-    text-transform: uppercase;
-    color: #fff;
-    letter-spacing: 1px;
-    cursor: pointer;
-    outline: none;
-}
-.getInTouch form .button:hover {
-    background: #4ba7ff;
-}
-
 
 .connection {
     width: 50%;

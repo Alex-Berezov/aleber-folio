@@ -5,7 +5,7 @@ const PortfolioPopup = ({workName, stack, libraries, prodLink, githubLink, close
 
     return <div className="projectDescPopup">
         <div className="header">
-            <h3>Информация о проекте {workName}</h3>
+            <h3>Информация о проекте <span>{workName}</span></h3>
             <span onClick={closeVisiblePopup}>X</span>
         </div>
         <div className="body">

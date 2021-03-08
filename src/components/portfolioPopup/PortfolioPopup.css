@@ -21,6 +21,11 @@
     color: #fff;
 }
 
+.portfolio .projectDescPopup .header h3 span {
+    color: #191d2b;
+    font-size: 28px;
+}
+
 .portfolio .projectDescPopup .header span {
     margin-left: auto;
     cursor: pointer;
