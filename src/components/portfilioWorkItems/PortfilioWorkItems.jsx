@@ -2,10 +2,10 @@ import React from 'react'
 import PortfolioPopup from '../../components/portfolioPopup/PortfolioPopup'
 import './portfilioWorkItems.css'
 
-const PortfilioWorkItems = ({portfilioWorkItems, category, openVisiblePopup, closeVisiblePopup, visiblePopup}) => {
+const PortfilioWorkItems = ({portfolioWorkItems, category, openVisiblePopup, closeVisiblePopup, visiblePopup}) => {
     return <div className="tabs_content">
-        {portfilioWorkItems &&
-        portfilioWorkItems.map((work, index) => {
+        {portfolioWorkItems &&
+        portfolioWorkItems.map((work, index) => {
                 let workCategory = work.category
 
                 if (workCategory === category) {
@@ -17,9 +17,9 @@ const PortfilioWorkItems = ({portfilioWorkItems, category, openVisiblePopup, clo
                             alt="img-1"
                         />
 
-                        {portfilioWorkItems[visiblePopup] &&
+                        {portfolioWorkItems[visiblePopup] &&
                         <PortfolioPopup
-                            {...portfilioWorkItems[visiblePopup]}
+                            {...portfolioWorkItems[visiblePopup]}
                             closeVisiblePopup={closeVisiblePopup}
                         />
                         }
@@ -34,9 +34,9 @@ const PortfilioWorkItems = ({portfilioWorkItems, category, openVisiblePopup, clo
                             alt="img-1"
                         />
 
-                        {portfilioWorkItems[visiblePopup] &&
+                        {portfolioWorkItems[visiblePopup] &&
                         <PortfolioPopup
-                            {...portfilioWorkItems[visiblePopup]}
+                            {...portfolioWorkItems[visiblePopup]}
                             closeVisiblePopup={closeVisiblePopup}
                         />
                         }

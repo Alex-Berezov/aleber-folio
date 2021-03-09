@@ -8,7 +8,7 @@ import './portfolio.css'
 function Portfolio(props) {
     const dispatch = useDispatch();
     const [visiblePopup, setVisiblePopup] = useState(null)
-    const {portfilioNavItems, portfilioWorkItems, category} = useSelector(state => state.portfolioReducer)
+    const {portfolioNavItems, portfolioWorkItems, category} = useSelector(state => state.portfolioReducer)
 
     const onSelectCategory = useCallback(index => {
         dispatch(setPortfolioCategory(index))
@@ -32,10 +32,10 @@ function Portfolio(props) {
                     <PortfolioNavCat
                         activeCategory={category}
                         onClickCategory={onSelectCategory}
-                        items={portfilioNavItems}
+                        items={portfolioNavItems}
                     />
                     <PortfilioWorkItems
-                        portfilioWorkItems={portfilioWorkItems}
+                        portfolioWorkItems={portfolioWorkItems}
                         category={category}
                         openVisiblePopup={openVisiblePopup}
                         closeVisiblePopup={closeVisiblePopup}
