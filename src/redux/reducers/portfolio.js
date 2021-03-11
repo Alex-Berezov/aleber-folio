@@ -9,17 +9,14 @@ import simple_chat from '../../assets/img/simple_chat.jpg'
 import farizda_cv from '../../assets/img/farizda_cv.jpg'
 import yeti_calc from '../../assets/img/yeti_calc.jpg'
 import tabs_gallery from '../../assets/img/tabs_gallery.jpg'
-import img10 from '../../assets/img/examples/img-10.jpg'
-import img11 from '../../assets/img/examples/img-11.jpg'
-import img12 from '../../assets/img/examples/img-12.jpg'
-import img13 from '../../assets/img/examples/img-13.jpg'
-import img14 from '../../assets/img/examples/img-14.jpg'
-import img15 from '../../assets/img/examples/img-15.jpg'
-import img16 from '../../assets/img/examples/img-16.jpg'
-import img17 from '../../assets/img/examples/img-17.jpg'
-import img18 from '../../assets/img/examples/img-18.jpg'
-import img19 from '../../assets/img/examples/img-19.jpg'
-import img20 from '../../assets/img/examples/img-20.jpg'
+import screen_keyboard from '../../assets/img/screen_keyboard.jpg'
+import mega_calc from '../../assets/img/mega_calc.jpg'
+import yeti_spb from '../../assets/img/yeti_spb.jpg'
+import aquasklad from '../../assets/img/aquasklad.jpg'
+import vodazona from '../../assets/img/vodazona.jpg'
+import humoraf from '../../assets/img/humoraf.jpg'
+import gurmanfresh from '../../assets/img/gurmanfresh.jpg'
+import aquatrol from '../../assets/img/aquatrol.jpg'
 
 let initialState = {
     category: null,
@@ -98,6 +95,15 @@ let initialState = {
             githubLink: 'https://github.com/Alex-Berezov/yeti-spb_FacadesCalc'
         },
         {id: 22,
+            img: mega_calc,
+            category: 1,
+            workName: 'Мега калькулятор на всю страницу',
+            stack: 'JS, HTML, CSS, WordPress',
+            libraries: '',
+            prodLink: 'https://yeti-spb.ru/kalkulyator-lestnicy-pod-kljuch/',
+            githubLink: 'https://github.com/Alex-Berezov/yeti-spb_MegaCalc'
+        },
+        {id: 23,
             img: tabs_gallery,
             category: 1,
             workName: 'Простая галлерея с табами',
@@ -106,104 +112,68 @@ let initialState = {
             prodLink: 'http://localhost:3001/portfolio',
             githubLink: 'https://github.com/Alex-Berezov/Tabs'
         },
-        {id: 23,
-            img: img10,
-            category: 1,
-            workName: 'Work 10',
-            stack: 'React, Node, Express, MongoDB',
-            libraries: 'Redux, React-router-dom, Saga',
-            prodLink: 'https://github.com/Alex-Berezov',
-            githubLink: 'https://github.com/Alex-Berezov/aleber-folio'
-        },
         {id: 24,
-            img: img11,
+            img: screen_keyboard,
             category: 1,
-            workName: 'Work 11',
-            stack: 'React, Node, Express, MongoDB',
-            libraries: 'Redux, React-router-dom, Saga',
-            prodLink: 'https://github.com/Alex-Berezov',
-            githubLink: 'https://github.com/Alex-Berezov/aleber-folio'
-        },
-        {id: 25,
-            img: img12,
-            category: 1,
-            workName: 'Work 12',
-            stack: 'React, Node, Express, MongoDB',
-            libraries: 'Redux, React-router-dom, Saga',
-            prodLink: 'https://github.com/Alex-Berezov',
-            githubLink: 'https://github.com/Alex-Berezov/aleber-folio'
-        },
-        {id: 26,
-            img: img13,
-            category: 1,
-            workName: 'Work 13',
-            stack: 'React, Node, Express, MongoDB',
-            libraries: 'Redux, React-router-dom, Saga',
-            prodLink: 'https://github.com/Alex-Berezov',
-            githubLink: 'https://github.com/Alex-Berezov/aleber-folio'
-        },
-        {id: 27,
-            img: img14,
-            category: 1,
-            workName: 'Work 14',
-            stack: 'React, Node, Express, MongoDB',
-            libraries: 'Redux, React-router-dom, Saga',
-            prodLink: 'https://github.com/Alex-Berezov',
-            githubLink: 'https://github.com/Alex-Berezov/aleber-folio'
+            workName: 'Screen keyboard',
+            stack: 'JS, HTML, CSS',
+            libraries: '',
+            prodLink: 'https://screen-keyboard.vercel.app/',
+            githubLink: 'https://github.com/Alex-Berezov/screen_keyboard'
         },
         {id: 41,
-            img: img15,
+            img: aquatrol,
             category: 2,
-            workName: 'Work 15',
-            stack: 'React, Node, Express, MongoDB',
-            libraries: 'Redux, React-router-dom, Saga',
-            prodLink: 'https://github.com/Alex-Berezov',
-            githubLink: 'https://github.com/Alex-Berezov/aleber-folio'
+            workName: 'Акватрол',
+            stack: 'JS, HTML, CSS, WordPress',
+            libraries: '',
+            prodLink: 'https://xn--80aaf5ahrnp.xn--p1ai/',
+            githubLink: ''
         },
         {id: 42,
-            img: img16,
+            img: yeti_spb,
             category: 2,
-            workName: 'Work 16',
-            stack: 'React, Node, Express, MongoDB',
-            libraries: 'Redux, React-router-dom, Saga',
-            prodLink: 'https://github.com/Alex-Berezov',
-            githubLink: 'https://github.com/Alex-Berezov/aleber-folio'
+            workName: 'Сайт компании Yeti спб',
+            stack: 'JS, HTML, CSS, WordPress',
+            libraries: '',
+            prodLink: 'https://yeti-spb.ru/',
+            githubLink: ''
         },
         {id: 43,
-            img: img17,
+            img: aquasklad,
             category: 2,
-            workName: 'Work 17',
-            stack: 'React, Node, Express, MongoDB',
-            libraries: 'Redux, React-router-dom, Saga',
-            prodLink: 'https://github.com/Alex-Berezov',
-            githubLink: 'https://github.com/Alex-Berezov/aleber-folio'
+            workName: 'Aquasklad',
+            stack: 'JS, HTML, CSS, WordPress',
+            libraries: '',
+            prodLink: 'https://aquasklad.ru/',
+            githubLink: ''
         },
         {id: 44,
-            img: img18,
+            img: humoraf,
             category: 2,
-            workName: 'Work 18',
-            stack: 'React, Node, Express, MongoDB',
-            libraries: 'Redux, React-router-dom, Saga',
-            prodLink: 'https://github.com/Alex-Berezov',
-            githubLink: 'https://github.com/Alex-Berezov/aleber-folio'
+            workName: 'HumorAF.ru',
+            stack: 'JS, HTML, CSS, WordPress',
+            libraries: '',
+            prodLink: 'https://humoraf.ru/',
+            githubLink: ''
         },
         {id: 45,
-            img: img19,
+            img: vodazona,
             category: 2,
-            workName: 'Work 19',
-            stack: 'React, Node, Express, MongoDB',
-            libraries: 'Redux, React-router-dom, Saga',
-            prodLink: 'https://github.com/Alex-Berezov',
-            githubLink: 'https://github.com/Alex-Berezov/aleber-folio'
+            workName: 'Vodazona',
+            stack: 'JS, HTML, CSS, WordPress',
+            libraries: '',
+            prodLink: 'https://vodazona.ru/',
+            githubLink: ''
         },
         {id: 46,
-            img: img20,
+            img: gurmanfresh,
             category: 2,
-            workName: 'Work 20',
-            stack: 'React, Node, Express, MongoDB',
-            libraries: 'Redux, React-router-dom, Saga',
-            prodLink: 'https://github.com/Alex-Berezov',
-            githubLink: 'https://github.com/Alex-Berezov/aleber-folio'
+            workName: 'Gurmanfresh',
+            stack: 'JS, HTML, CSS, WordPress',
+            libraries: '',
+            prodLink: 'https://gurmanfresh.vercel.app/',
+            githubLink: ''
         }
     ]
 }

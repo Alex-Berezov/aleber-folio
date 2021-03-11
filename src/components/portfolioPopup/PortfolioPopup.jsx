@@ -19,11 +19,23 @@ const PortfolioPopup = ({workName, stack, libraries, prodLink, githubLink, close
             </div>
             <div className="body__items prodLink">
                 <h4>Ссылка на продакшен:</h4>
-                <a href="{prodLink}">{prodLink}</a>
+                <a
+                    target="_blank"
+                    href={prodLink}
+                    rel="noopener noreferrer"
+                >
+                    {prodLink}
+                </a>
             </div>
             <div className="body__items githubLink">
                 <h4>Ссылка на гитхаб:</h4>
-                <a href="{githubLink}">{githubLink}</a>
+                <a
+                    target="_blank"
+                    href={githubLink}
+                    rel="noopener noreferrer"
+                >
+                    {githubLink}
+                </a>
             </div>
         </div>
     </div>

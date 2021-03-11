@@ -43,6 +43,14 @@
     }
 }
 
+@media screen and (max-width: 640px) {
+    .about {
+        height: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .about {
         height: auto;

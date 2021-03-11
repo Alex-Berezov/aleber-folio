@@ -1,7 +1,7 @@
 import React, {useState, useCallback} from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import PortfolioNavCat from '../../components/portfolioNavCat/PortfolioNavCat'
-import {setPortfolioCategory, setPortfolioItems} from '../../redux/actions/portfolio'
+import {setPortfolioCategory} from '../../redux/actions/portfolio'
 import PortfilioWorkItems from '../../components/portfilioWorkItems/PortfilioWorkItems'
 import './portfolio.css'
 

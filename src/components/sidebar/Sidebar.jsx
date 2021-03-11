@@ -14,9 +14,9 @@ function Sidebar() {
     return (
         <>
             <div onClick={toggleVisibleSidebar} className="sidebar__burger">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span />
+                <span />
+                <span />
             </div>
             <div className={visibleSidebar && visibleSidebar ? 'sidebar visible_sidebar' : 'sidebar'}>
                 <div onClick={toggleVisibleSidebar} className="sidebar_close">X</div>
@@ -26,19 +26,50 @@ function Sidebar() {
                 <div className="sidebar__navMenu">
                     <ul>
                         <li>
-                            <NavLink exact to="/" activeClassName="active" >Главная</NavLink>
+                            <NavLink
+                                exact
+                                to="/"
+                                activeClassName="active"
+                                onClick={toggleVisibleSidebar}
+                            >
+                                Главная
+                            </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/about" activeClassName="active" >Обо мне</NavLink>
+                            <NavLink
+                                to="/about"
+                                activeClassName="active"
+                                onClick={toggleVisibleSidebar}
+                            >
+                                Обо мне
+                            </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/resume" activeClassName="active" >Резюме</NavLink>
+                            <NavLink
+                                to="/resume"
+                                activeClassName="active"
+                                onClick={toggleVisibleSidebar}
+                            >
+                                Резюме
+                            </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/portfolio" activeClassName="active" >Портфолио</NavLink>
+                            <NavLink
+                                to="/portfolio"
+                                activeClassName="active"
+                                onClick={toggleVisibleSidebar}
+                            >
+                                Портфолио
+                            </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/contacts" activeClassName="active" >Контакты</NavLink>
+                            <NavLink
+                                to="/contacts"
+                                activeClassName="active"
+                                onClick={toggleVisibleSidebar}
+                            >
+                                Контакты
+                            </NavLink>
                         </li>
                     </ul>
                 </div>
